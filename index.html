@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <script src="js/jquery/jquery-3.5.1.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="b/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="b/js/bootstrap.min.js"></script>
+<title>Home | Login</title>
+<script>
+    $(document).ready(function(){
+         
+         var ele1 = "#pass", ele2 = "#email";
+         var val1 = "Password", val2 = "username@company.com";
+    function refactor(ele, value){      
+        $(ele).click(function(){
+            $(ele).val("");
+            });
+       $(ele).focusout(function(){
+            $(ele).val(value);
+        });
+        }
+     refactor(ele1, val1);
+     refactor(ele2, val2);
+    });
+</script>
+<style>
+   ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    white;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    white;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    white;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    white;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    white;
+}
+    .form-control {
+        transition: none;
+     }
+     .form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #b9e05d;
+  outline: 0;
+  box-shadow: none;
+}
+    a:hover {
+       text-decoration: none;
+     }
+</style>
+</head>
+<body style="font-family: 'Open Sans', sans-serif, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue ; margin-top: 0px; background-color: transparent">
+<div class="container"  >
+
+    <div class="row justify-content-center"  >
+        <div class="col-md-6.5 " style="background: url(../Left_image.png) no-repeat; padding: 2px 60px 2px 60px" >
+            <div class="row" style="margin-top: 25px;">
+                <div class="col-12">
+                    <div class="header">
+                        <img src="images/logo.png" alt="coat of arm" class="img-fluid float-left" >
+                        <div class="wordwrap " style="width: 22em;">
+                            <div style="margin-left: 8em; padding-top: 1em;" >
+                                <span   class="text-light h5 " style="font-size: large;font-weight: 600;">Developer Training Association of Nigeria</span>
+                            </div>
+                         </div>
+                    </div>
+                    <br>
+                    <hr style="opacity: 0.5;border: 0.2px solid rgb(236, 233, 233); width: 100%">  
+                </div>
+            </div>
+
+    <div class="row">
+        <div class="col-12">
+            <p style="margin-bottom: 2px;" class="d-flex align-items-baseline"><br>
+                <span style="margin-top: 0px;" 
+                   class="">
+                   <button class="btn btn-lg text-light " style="margin: 0px;padding: 0px;font-size:30px;font-weight: bolder;"><span class="">MGPS</span>
+                   </button>
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span style="margin-top: 0px;">
+                    <button style="font-size: 11.5px ;border-radius: 7px; font-stretch: ultra-expanded;padding: 1px 11px 2px 8px; opacity: 1;" class="btn disabled text-center btn-sm btn-warning text-light">
+                        Selected
+                    </button>
+                </span>
+            </p>
+            <p class="text-light" style="font-size: larger;">
+                Mesmerize Grazing and Permit <br> System <br>
+                <hr style="border: 1.5px solid #b9e05d;; width: 35%; margin-left:0px;margin-top: 25px">
+            </p>
+        </div>
+    </div>
+
+    <div class="row text-light" style="margin-top: 20px">
+                <div class="col-4">
+                    <span style="font-weight: 400; font-weight: bolder;" class="h4">Login</span>
+                </div>
+                <div class="col-8 text-right">
+                        <a href="#"> <span style="color: #b9e05d;font-weight: bolder;margin-top: 20px;">
+                            Already have an account&nbsp; <i  style="font-size: small;" class="fa fa-arrow-right" aria-hidden="true"></i>
+                             </span>
+                         </a>
+                </div>
+    </div>
+ 
+    <div class="row " style="margin-top: 15px;">
+        <div class="col-12">
+            <form action="#" class="">
+                <div class="form-group" style="margin: 0px 0px 10px">
+                    <label for="username" style="font-size:11px;color: rgb(172, 172, 172);" ><strong style="font-weight: bolder;">Email Address</strong></label>
+                    <input id="email" value="username@company.com"  style="font-weight: bolder;color: white;padding: 27px 25px 27px 23px; border-radius: 10px; font-size: 13px; background-color: transparent;"  type="text" class="form-control" name="username" />
+                </div>
+                <div class="form-group" style="margin: 0px 0px 10px">
+                    <label style="font-size: 11px;color: rgb(195, 195, 195);" for="username" ><strong style="font-weight: bolder;">Password</strong></label>
+                    <input id="pass" value="Password" 
+                       style="font-weight: bolder;opacity: 1; font-size: 13px; padding: 27px 25px 27px 23px; border-radius: 10px;color: rgb(235, 235, 235); background-color: transparent;" type="text" class="form-control " name="username" />
+                </div>
+                <button  style="margin-top: 10px;border-radius: 9px;font-size: medium; padding: 12px 25px 12px 25px" type="submit" 
+                class="btn btn-warning btn-lg text-light">Login Now</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row " style="margin-top: 80px; margin-bottom: 50px;">
+        <div class="col ">
+            <div class="d-flex justify-content-center">
+                <img src="images/remitta.png" alt="Services Logos" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+</div>
+</body>
+</html>

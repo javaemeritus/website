@@ -1,0 +1,54 @@
+.let-transparent{
+	background: none;
+}
+.wordwrap{
+  word-wrap: break-word;
+}
+
+.form-control::placeholder {
+  color: #white;
+  opacity: 1;
+}
+
+.resetaccordion{
+	background-color: white;
+	border-left: 0px;
+	border-right: 0px;
+	border-radius: none;
+}
+
+.resetaccordion > a{
+	text-decoration: none;
+	color: grey;
+}
+.footer-links{
+	color: grey;
+	font-size: small;
+    text-decoration: none;
+	font-weight: 500;
+    color: grey;
+}
+.footer-links > a{
+	text-decoration: none;
+	font-weight: 500;
+    color: grey;
+	margin-right: 8px;
+
+}
+.card-columns > a{
+	 color: grey;
+}
+.card-columns  .card{
+	 padding: 10px;
+}
+.card-columns  .card:hover{
+	 border: 2px solid brown;
+}
+
+.form-control:focus {
+ 
+}
+.resetaccordion .card-body{
+	padding-left:0px;
+	padding-right:0px;
+}

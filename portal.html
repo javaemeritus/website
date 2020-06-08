@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="../fontawesome/css/fontawesome.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="b/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/search.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="../js/custom.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/jquery/jquery-3.5.1.js"></script>
+    <script src="b/js/bootstrap.min.js"></script>
+<title>Portal | Welcome</title>
+<script>
+    $(document).ready(function(){
+
+        var ele1 = "#amala", val1 = "username@company.com";
+        function refactor(ele, value){      
+        $(ele).click(function(){
+            $(ele).val("");
+            });
+        }
+       refactor(ele1, val1);
+
+        $('.collapse').on('show.bs.collapse', function(){
+            $(this).parent().find(".fa-angle-up").removeClass('fa-angle-up').addClass('fa-angle-down')
+        });
+        $('.collapse').on('hidden.bs.collapse', function(){
+            $(this).parent().find(".fa-angle-down").removeClass('fa-angle-down').addClass('fa-angle-up')
+        });
+    });
+</script>
+
+<style>
+
+ .card text-right{
+    margin-top: 10px;
+ }
+
+.input-group.md-form.form-sm.form-1 input{
+  border: 1px solid #bdbdbd;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input {
+  border: 1px solid #bdbdbd;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input.red-border {
+  border: 1px solid #ef9a9a;
+}
+.input-group.md-form.form-sm.form-2 input.lime-border {
+  border: 1px solid #cddc39;
+}
+.input-group.md-form.form-sm.form-2 input.amber-border {
+  border: 1px solid #ffca28;
+}
+
+#accordion > .card  {
+    border-top: 0px;
+    border-radius: 0px;
+}
+    .card {
+        margin-left: 0px;
+  
+        border-radius: 10px;
+    }
+    body{
+        margin-top: 25px;
+    }
+    #myinput:hover{
+        background-color:  black;
+    }
+
+    .form-control:focus {
+  color: #495057;
+  background-color: rgb(228, 228, 228);
+  border-color: #eaf0db;
+  outline: 0;
+  box-shadow: none;
+}
+#buttonsearch{
+    color: #495057;
+  background-color: rgb(247, 247, 247);
+  border-color: #eaf0db;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control{
+    background-color: rgb(245, 245, 245);
+}
+</style>
+</head>
+<body >
+ <div class="container">
+     <div class="row">
+         <div class="col-md-8 offset-md-2">
+            <div class="row">
+                <div class="col-5">
+                    <h2> <span style="font-weight: bolder;" >Portals</span>&nbsp; <span style="border-radius: 6px;" class="badge badge-pills badge-success">7</span></h2>
+                 </div>
+                    <div class="col-7 text-right" style="padding-top: 10px;">
+                         <span style="font-weight: 700; color: rgb(185, 185, 185);font-size: 14px;">One Account to Rule them all</span>
+                    </div>
+            </div>
+                <hr style="border: 1px solid rgb(180, 177, 177);width: 100%">
+         </div>
+     </div>
+     <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <form autocomplete="off" action="#">
+                <div class="autocomplete"  style="width: 100%;">
+                    <div class="input-group">
+                        <input style="padding-left: 15px;font-size: 14px; font-weight:  600;height: 50px; background-color: rgb(245, 245, 245); color : rgb(185, 185, 185)" id="amala"  class="form-control py-2 border-right-0 border" type="text" value="Search Portal..." >
+                        <span  class="input-group-append" style="background-color: rgb(245, 245, 245);border:0px solid #dee2e6;">
+                            <div  class="input-group-text bg-transparent"><i class="fa fa-search" style="opacity: 0.5;font-weight: 500;"></i></div>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div id="accordion">
+
+            <div class="card resetaccordion" >
+                <a data-toggle="collapse" href="#idCollaspeable1" class="">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card-body bg-default"><span class="h5">Most Used</span></div>
+                        </div>
+                        <div class="col text-right">
+                            <div class="card-body bg-default"><span class="h5"> <i class="fa fa-angle-up"></i></span></div>
+                        </div>
+                    </div>
+                </a>
+                <div id="idCollaspeable1" class="collapse" data-parent="#accordion">
+                    <div class="card-columns">
+                        <a href="#">
+                            <div class="card">
+                                <div class="text-right"><span style="border-radius: 50%;" class="badge badge-success"><i class="fa fa-check"></i></span>&nbsp&nbsp;</div>
+                                <div class="card-body">
+                                    <h4 class="card-title">TPLS</h4>
+                                    <p class="card-text">Mesmerise Grazing <br> and Permit System</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="card">
+                                <div class="text-right"><span style="border-radius: 50%;"  class="badge badge-success"><i class="fa fa-check"></i></span>&nbsp;&nbsp;</div>
+                                <div class="card-body">
+                                    <h4 class="card-title">OTISP</h4>
+                                    <p class="card-text">Agriculture Industry <br> Service Portal</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div >
+        </div>
+
+        <div class="card resetaccordion" >
+            <a data-toggle="collapse" href="#idCollaspeable2" class="">
+                <div class="row">
+                    <div class="col">
+                        <div class="card-body bg-default"><span class="h5">General</span></div>
+                    </div>
+                    <div class="col text-right">
+                        <div class="card-body bg-default"><span class="h5"><i class="fa fa-angle-up"></i></span></div>
+                    </div>
+                </div>
+            </a>
+            <div id="idCollaspeable2" class="collapse" data-parent="#accordion">
+            <p>This is the acordion body</p>
+        </div >
+    </div>
+
+        <div class="card resetaccordion" >
+            <a data-toggle="collapse" href="#idCollaspeable3" class="">
+                <div class="row">
+                    <div class="col">
+                        <div class="card-body bg-default"><span class="h5">Mainstream</span></div>
+                    </div>
+                    <div class="col text-right">
+                        <div class="card-body bg-default"><span class="h5"><i class="fa fa-angle-up"></i></span></div>
+                    </div>
+                </div>
+            </a>
+            <div id="idCollaspeable3" class="collapse" data-parent="#accordion">
+            <p>This is the acordion body</p>
+        </div >
+    </div>
+    <div class="card resetaccordion" >
+        <a data-toggle="collapse" href="#idCollaspeable4" class="">
+            <div class="row">
+                <div class="col">
+                    <div class="card-body bg-default"><span class="h5">Restream</span></div>
+                </div>
+                <div class="col text-right">
+                    <div class="card-body bg-default"><span class="h5"><i class="fa fa-angle-up"></i></span></div>
+                </div>
+            </div>
+        </a>
+        <div id="idCollaspeable4" class="collapse" data-parent="#accordion">
+        <p>This is the acordion body</p>
+    </div >
+</div>
+<div class="card resetaccordion" >
+    <a data-toggle="collapse" href="#idCollaspeable5" class="">
+        <div class="row">
+            <div class="col">
+                <div class="card-body bg-default"><span class="h5">Liquid</span></div>
+            </div>
+            <div class="col text-right">
+                <div class="card-body bg-default"><span class="h5"><i class="fa fa-angle-up"></i></span></div>
+            </div>
+        </div>
+    </a>
+    <div id="idCollaspeable5" class="collapse" data-parent="#accordion">
+    <p>This is the acordion body</p>
+</div >
+</div>
+<div class="card resetaccordion" >
+    <a data-toggle="collapse" href="#idCollaspeable6" class="">
+        <div class="row">
+            <div class="col">
+                <div class="card-body bg-default"><span class="h5">Others</span></div>
+            </div>
+            <div class="col text-right">
+                <div class="card-body bg-default"><span class="h5"><i class="fa fa-angle-up"></i></span></div>
+            </div>
+        </div>
+    </a>
+    <div id="idCollaspeable6" class="collapse" data-parent="#accordion">
+    <p>This is the acordion body</p>
+</div >
+</div>
+                
+            </div>
+        </div>
+    </div>
+ </div>
+ <script>
+    var items = [{"title":"OTISP" , "body":"Agriculture Industry Service Portal"}];
+    var input = document.getElementById("amala") 
+    console.log(input);
+    autocomplete(input, items);
+    </script>
+</body>
+<footer style="margin-top: 40px;margin-bottom: 10px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <hr style="border: 1px solid rgb(180, 177, 177);width: 100%">
+                <div class="row">
+                    <div class="col-7 footer-links">
+                        <a href="" class="" ><span>About</span></a>
+                        <a href="" class="" ><span>Contact</span></a>
+                        <a href="" class="" ><span>Privacy</span></a>
+                        <a href="" class="" ><span>Terms</span></a>
+                    </div>
+                    <div class="col-5 text-right footer-links">
+                        <span>Copyright 2020 | ETA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
